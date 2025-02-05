@@ -14,5 +14,4 @@ class Note : RealmObject {
     var _id: ObjectId = ObjectId.invoke()
     var title: String = ""
     var description: String = ""
-    var timestamp: RealmInstant = RealmInstant.now()
 }

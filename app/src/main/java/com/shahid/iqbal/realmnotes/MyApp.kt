@@ -21,7 +21,8 @@ class MyApp : Application() {
     }
 
     private fun setRealmSdk() {
-        val configuration = RealmConfiguration.Builder(schema = setOf(Note::class),)
+        val configuration = RealmConfiguration
+            .Builder(schema = setOf(Note::class))
             .compactOnLaunch()
             .build()
 
